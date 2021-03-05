@@ -16,7 +16,7 @@ const Link = styled.a`
 
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 700;
     
     & > * {
         display: inline;
