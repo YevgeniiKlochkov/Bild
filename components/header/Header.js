@@ -7,12 +7,14 @@ const Container = styled.div`
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   a {
     text-decoration: none;
     color: #111;
   }
+  padding-top:20px;
+  padding-bottom:20px;
 `
 
 
