@@ -20,9 +20,9 @@ const Container = styled.div`
 
 const Header = (props) => {
     return <Container>
-        <Logo></Logo>
-        <Search></Search>
-        <Menu></Menu>
+        <Logo href="/" title="Bild.ua" logo="/logo.png" />
+        <Search />
+        <Menu />
     </Container>
 }
 

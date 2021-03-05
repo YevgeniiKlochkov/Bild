@@ -1,50 +1,59 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
-  .logo{
-    text-transform: uppercase; 
+const Link = styled.a`
+/*
+Тут задаешь общие правила внешщнего вида для всех детей 
+плюс свои собственные правила, если есть
+Этот компонент может называться как угодно
+Если ты хочешь в одном файле прописать все стили, а в компонентах чисто названия класов, 
+то это другой подход. У твоего подхожа есть минус, ты верстая в другом файле можешь запросто сменить случайно 
+стили этого компонента. В больших проектах это будет точно. Нужно выбрать такой способ, что бы именна класов не 
+были статичный как у тебя
+
+Я здесь сейчас styled.div заменю на styled.a. 
+По сути ты сейчас создаешь мини реакт компонет, состоящий из одной ссылки
+*/
+
+    text-transform: uppercase;
     font-size: 2rem;
+    font-weight: 900;
     
-  }
-  
-  .logo * {
-    vertical-align: middle;
-    display: inline-block;
-  }
-  
-  .logo:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
-  
-  @import "/fonts/font.css";
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-  font-family: "Roboto", "logoBild", sans-serif;
-  font-weight: 900;
-  
-  .logo-text, .logo-img {
-    display: inline;
-    vertical-align: middle;
-  }
-  
-  .logo--img {
-    margin-right:20px;
-    height: 100%
-  }
-  .
+    & > * {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
 `
 
+const Image = styled.img`
+    margin-right:20px;
+    height: 100%
+`
 
-const Logo = (props) => {
-    return <Container>
-
-        <a href="#" className="logo" title="Bild.ua">
-            <img src="/logo.png" className="logo--img" alt="Logo"/>
-            <span className="logo--text">Bild.ua</span>
-        </a>
-    </Container>
+const Title = styled.span`
+    margin-right:20px;
+    height: 100%
+`
+/**
+ * Можно разрешить из вне менять параметры внутри.
+ * Например, разрешим менять ссылку, лого и текс. Это не обязательно тут нужно делать,
+ * но в целом часто такое нужно будет делать
+ */
+const Logo = ({href, title, logo}) => {
+    /**
+     * Важно делать разметку смысловой, а потом уже стили.
+     * Т.е. сначала выделить логические блоки, назвать их по смыслу, сделать верстку без стилей, а потом стилтзовать
+     */
+    return <Link href={href} title={title}>
+        <Image src={logo} alt="Logo"/>
+        <Title>{title}</Title>
+    </Link>
 }
 
 export default Logo
