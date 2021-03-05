@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Logo from "../logo/Logo";
 import Menu from "../menu/Menu";
 import Search from "../search/Search";
+import GroupButtons from "../groupButtons/GroupButtons";
 
 const Container = styled.div`
   background-color: #ffffff;
@@ -23,6 +24,7 @@ const Header = (props) => {
         <Logo></Logo>
         <Search></Search>
         <Menu></Menu>
+        <GroupButtons></GroupButtons>
     </Container>
 }
 

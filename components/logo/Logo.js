@@ -20,9 +20,9 @@ const Container = styled.div`
 }
   
   @import "/fonts/font.css";
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   font-family: "Roboto", "logoBild", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   
   .logo-text, .logo-img {
     display: inline;
