@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-left: 1rem;
   }
   a:hover{

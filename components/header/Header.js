@@ -8,7 +8,7 @@ const Container = styled.div`
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  max-width: 1300px;
+  //max-width: 1400px;
   margin: 0 auto;
   a {
     text-decoration: none;
