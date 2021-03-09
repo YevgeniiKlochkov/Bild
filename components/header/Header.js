@@ -57,9 +57,7 @@ const Header = (props) => {
     return <Container>
         <Logo href="/" title="Bild.ua" logo="/logo.png" />
         <Search />
-        <Menu>
-            <MenmItem nameItem="Акции" href="/" Title="Акции"/>
-        </Menu>
+        <Menu list={list}/>
         <GroupButtons/>
     </Container>
 }
