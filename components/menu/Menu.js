@@ -1,30 +1,14 @@
 import styled from 'styled-components';
+import MenuItem from "../menuItem/MenuItem";
 
-const Container = styled.div`
-  a{
-    font-size: 1rem;
-    padding-left: 1rem;
-  }
-  a:hover{
-    text-decoration: underline;
-  }
-  @import "./components/font.css";
-  font-family: "logoBild", sans-serif;
+const List = styled.nav `
+
 `
 
-
-const Menu = (props) => {
-    return <Container>
-        <nav>
-            <a href="#" title="Акции">Акции</a>
-            <a href="#" title="Новостройки">Новостройки</a>
-            <a href="#" title="На карте">На карте</a>
-            <a href="#" title="Коттетжи">Коттетжи</a>
-            <a href="#" title="Комерческая">Комерческая</a>
-            <a href="#" title="Комерческая">Комерческая</a>
-            <a href="#" title="Застройщики">Застройщики</a>
-        </nav>
-    </Container>
+const Menu = (menuItems) => {
+    return <List>
+        <MenuItem/>
+    </List>
 }
 
 export default Menu
