@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
 const Icon = styled.a`
+    img {
     position: relative;
     z-index: 2;
+    }
+    
     &:before {
     content:"";
     display: inline-block;
