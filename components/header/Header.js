@@ -11,7 +11,7 @@ const Container = styled.div`
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  //max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   a {
     text-decoration: none;
@@ -20,38 +20,38 @@ const Container = styled.div`
   padding-top:20px;
   padding-bottom:20px;
 `
-let list = {
-    1 : {
+let list = [
+    {
         itemName: 'Акции',
         href: '#',
         title: 'Акции'
     },
-    2 : {
+    {
         itemName: 'Новостройки',
         href: '#',
         title: 'Новостройки'
     },
-    3 : {
+    {
         itemName: 'На карте',
         href: '#',
         title: 'На карте'
     },
-    4 : {
+    {
         itemName: 'Котетжи',
         href: '#',
         title: 'Котетжи'
     },
-    5 : {
+    {
         itemName: 'Комерческая',
         href: '#',
         title: 'Комерческая'
     },
-    6 : {
+    {
         itemName: 'Застройщики',
         href: '#',
         title: 'Застройщики'
     }
-};
+];
 
 const Header = (props) => {
     return <Container>

@@ -5,13 +5,18 @@ const List = styled.nav `
 
 `
 
-const Menu = (menuItems) => {
-    for (let key in menuItems) {
-        console.log(key+':'+menuItems[key]);
-    }
-
+const Menu = ({list}) => {
     return <List>
-        <MenuItem/>
+        {
+            list.map((menuItem, index) => {
+                return <MenuItem
+                    key={index}
+                    nameItem={menuItem.itemName}
+                    href={menuItem.href}
+                    title={menuItem.title}
+                />
+            })
+        }
     </List>
 }
 
