@@ -4,7 +4,7 @@ const Container = styled.div`
   .fieldSearch {
     width: 250px;
     height: 40px;
-    border: 1px #111 solid;
+    border: .1rem solid hsla(0,0%,60.8%,.5);
     border-radius: 3px;   
   }
   
@@ -14,7 +14,9 @@ const Container = styled.div`
     border: none;
     background: none;
     position: relative;
-    left:-20px;
+    left: -32px;
+    top: 6px;
+    
   }
   
   

@@ -4,7 +4,7 @@ const Item = styled.a`
     @import "./components/font.css";
     font-family: "logoBild", sans-serif;
     
-    font-size: 1rem;
+    font-size: 0,875rem;
     padding-left: 1rem;
     &:hover{
         text-decoration: underline;

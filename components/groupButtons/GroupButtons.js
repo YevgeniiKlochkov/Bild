@@ -1,37 +1,50 @@
 import styled from 'styled-components';
 
-const Icon = styled.a`
-    img {
+const Picture = styled.img`
     position: relative;
     z-index: 2;
-    }
-    
-    &:before {
+    width: 25px;
+
+`
+
+const Icon = styled.a`
+      
+    &::before {
     content:"";
     display: inline-block;
     position: relative;
-    right: -20px;
+    right: -27px;
+    top: -7px;
     z-index: 1;
+    height: 20px;
+    width: 20px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
-   &:first-of-type:before {
-    content: url(/blobShapeBuilds.svg);
+    
+   &:first-of-type::before {
+    background-image: url(/blobShapeBuilds.svg);
+    
    }
-   &:last-of-type:before {
-    content: url(/blobShapeDoc.svg);
+   &:last-of-type::before {
+    background-image: url(/blobShapeDoc.svg);
+    top: -2px;
    }
 `
 const Icons = styled.nav`
-    weight: 100px;
+    display: flex;
 `
+
 
 const GroupButtons = (props) => {
     return <Icons>
         <Icon>
-            <img src="/heart.svg" alt="Избранное"/>
+            <Picture src="/heart.svg" alt="Избранное"/>
             {/*<img src="/blobShapeBuilds.svg" alt="Фон"/>*/}
         </Icon>
         <Icon>
-            <img src="/person.svg" alt="Избранное"/>
+            <Picture src="/person.svg" alt="Избранное"/>
             {/*<img src="/blobShapeDoc.svg" alt="Фон"/>*/}
         </Icon>
     </Icons>
