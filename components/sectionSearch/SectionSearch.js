@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import HeadSectionSearch from "../headSectionSearh/HeadSectionSearch";
+import Picture from "../picture/Picture";
 
 const Container = styled.div`
   background: rgba(254,236,0,.8);
@@ -14,7 +16,7 @@ const Col2 = styled.div`
     display: inline-block;
     width: 50%;
     height: 500px;
-    background: gray;
+    //background: gray;
     &:last-of-type {
         background: green;
     }
@@ -24,8 +26,11 @@ const Col2 = styled.div`
 const SectionSearch = (props) => {
     return <Container>
         <Inner>
-            <Col2/>
-            <Col2/>
+            <Col2>
+                <Picture src="/blobShape_lt.svg" alt="Random picture"/>
+                <HeadSectionSearch text="Выбирай надёжные новостройки!"/>
+            </Col2>
+            <Col2></Col2>
         </Inner>
 
     </Container>
