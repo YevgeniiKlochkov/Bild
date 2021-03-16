@@ -1,26 +1,17 @@
 import styled from 'styled-components';
 import HeadSectionSearch from "../headSectionSearh/HeadSectionSearch";
 import Picture from "../picture/Picture";
-import Row from "../../../containers/Row/Row";
+import Row from "../../../containers/row/Row";
+import Col2 from "../../../containers/col2/Col2";
 import Inner from "../../../containers/inner/Inner";
 import Text from "../text/Text";
+import Background from "../background/Background";
 
 const Box = styled.div`
   background: rgba(254,236,0,.8);
   padding: 3rem;
   margin: 40 0;
 `
-
-const Col2 = styled.div`
-    // display: inline-block;
-    // width: 50%;
-    // height: 500px;
-    // //background: gray;
-    // &:last-of-type {
-    //     background: green;
-    // }
-`
-
 
 const SectionSearch = (props) => {
     return <Box>
@@ -37,7 +28,13 @@ const SectionSearch = (props) => {
                     </Text>
                 </Row>
             </Col2>
-            <Col2></Col2>
+            <Col2>
+                <Background>
+                   {/* <Picture src="/blobShape_rl.svg" alt="Пятно"/>
+                    <Picture src="/blobShape_rb.svg" alt="Пятно"/>*/}
+                </Background>
+
+            </Col2>
         </Inner>
 
     </Box>
