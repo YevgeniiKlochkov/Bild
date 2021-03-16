@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Box = styled.div`
   width: 100%;
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -11,9 +11,9 @@ const Container = styled.div`
 `
 
 const Layout = (props) => {
-    return <Container>
+    return <Box>
         {props.children}
-    </Container>
+    </Box>
 }
 
 export default Layout

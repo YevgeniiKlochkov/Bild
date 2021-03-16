@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import MenuItem from "../menuItem/MenuItem";
+import MenuItem from "./menuItem/MenuItem";
 
 const List = styled.nav `
 

@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
-import SectionSearch from "../components/sectionSearch/SectionSearch";
-import Layout from "../components/layout/Layout";
+import Footer from "../components/simple/footer/Footer";
+import Header from "../components/simple/header/Header";
+import SectionSearch from "../components/simple/sectionSearch/SectionSearch";
+import Layout from "../components/simple/layout/Layout";
 
 
 export default function Home() {

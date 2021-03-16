@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 import Logo from "../logo/Logo";
 import Menu from "../menu/Menu";
-import Search from "../search/Search";
+import Search from "../../ui/search/Search";
 import GroupButtons from "../groupButtons/GroupButtons";
 
-
-
-
-const Container = styled.div`
+const Box = styled.div`
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -54,12 +51,12 @@ let list = [
 ];
 
 const Header = (props) => {
-    return <Container>
+    return <Box>
         <Logo href="/" title="Bild.ua" logo="/logo.png" />
         <Search />
         <Menu list={list}/>
         <GroupButtons/>
-    </Container>
+    </Box>
 }
 
 export default Header
